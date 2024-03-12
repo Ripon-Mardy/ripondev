@@ -1,0 +1,7 @@
+.navigation_list li:hover
+{
+    letter-spacing: 1px;
+    transition: all .4s ease-in-out;
+    cursor: pointer;
+    color : aqua;
+}

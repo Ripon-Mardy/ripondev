@@ -8,10 +8,21 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        
       },
+      backgroundColor : {
+        'bg-color': '#182C61',
+        'secondaryBgColor' : '#079992',
+        'footerBackground' : '#34495e',
+      },
+      textColor: {
+        'text-color' : '#079992',
+        'paraColor' : '#535c68',
+      },
+      borderColor : {
+        'borderColor' : '#0a3d62',
+        'borderBgColor' : '#079992'
+      }
     },
   },
   plugins: [],
