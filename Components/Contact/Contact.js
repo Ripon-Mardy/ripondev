@@ -29,15 +29,12 @@ const Contact = (e) => {
     });
   };
 
-  const ref = useRef < HTMLFormElement > null;
-
   return (
     <>
       <section className="pt-20 container mx-auto px-2 md:flex md:justify-between py-20">
         <div className="mx-auto w-full">
           <h1 className="text-3xl font-bold text-center mb-4">Contact Me</h1>
           <form
-            ref={ref}
             action={(e) => formAction(e)}
             className="w-2/3 mx-auto"
           >
