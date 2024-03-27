@@ -11,7 +11,7 @@ const Faq = () => {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("http://localhost:3000/api/faq");
+      const response = await fetch("api/faq");
       if (!response.ok) {
         throw new Error("Error to Fetch data");
       } // End If else statement

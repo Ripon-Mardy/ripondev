@@ -2,7 +2,6 @@
 
 import database from "@/db/Db";
 import contactModel from "@/models/ContactModel";
-import { revalidatePath } from "next/cache";
 
 const formAction = async (e) => {
     const name = e.get('name').toString();
