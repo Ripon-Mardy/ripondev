@@ -1,6 +1,4 @@
 'use client'
-import React, { useEffect } from 'react'
-import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -17,11 +15,8 @@ const getData =async () => {
 }
 
 const portfolio = async () => {
-  const [show, setShow] = useState(1);
-  const [loading, setLoading] = useState(true)
 
-  const handleNumber = (numberTab, filterNumber) => {
-    setShow(numberTab);
+  const handleNumber = (filterNumber) => {
     console.log(filterNumber);
   };
 const jsonData = await getData();
@@ -36,72 +31,62 @@ console.log(jsonData);
           <div>
             <ul className="flex flex-wrap gap-3 capitalize font-semibold">
               <li
-                onClick={() => handleNumber(1, "all")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 1 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  } `}
+                onClick={() => handleNumber("all")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 all
               </li>
               <li
-                onClick={() => handleNumber(2, "landing page")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 2 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("landing page")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer`}
               >
                 Landing page
               </li>
               <li
-                onClick={() => handleNumber(3, "nextjs page")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 3 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("nextjs page")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Next Js Page
               </li>
               <li
-                onClick={() => handleNumber(4, "tailwind css")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 4 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("tailwind css")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Tailwind CSS
               </li>
               <li
-                onClick={() => handleNumber(5, "e-Commerce")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 5 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("e-Commerce")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 e-Commerce
               </li>
               <li
-                onClick={() => handleNumber(6, "Bootstrap 5")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 6 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("Bootstrap 5")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Bootstrap 5
               </li>
               <li
-                onClick={() => handleNumber(7, "Business & Corporate")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 7 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("Business & Corporate")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Business & Corporate
               </li>
               <li
-                onClick={() => handleNumber(8, "Portfolio")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 8 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("Portfolio")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Portfolio
               </li>
               <li
-                onClick={() => handleNumber(9, "Educational")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 9 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber( "Educational")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Educational
               </li>
               <li
-                onClick={() => handleNumber(10, "Form Valdation")}
-                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer ${show === 10 ? "bg-secondaryBgColor text-white" : "bg-white"
-                  }`}
+                onClick={() => handleNumber("Form Valdation")}
+                className={`border px-3 rounded font-semibold border-borderColor hover:bg-secondaryBgColor hover:text-white duration-300 ease-in-out  hover:border-borderColor cursor-pointer `}
               >
                 Form Valdation
               </li>
@@ -112,11 +97,15 @@ console.log(jsonData);
               <div>
                 {
                   jsonData.map((item, index) => (
-                    <div className='mt-20' key={index}>
-                      <Image className='w-56' width={40} height={40} src={item.image}></Image>
-                      <div>
-                        <Link href={item.project_Link} target='_blank'>Demo</Link>
-                        <Link href={item.github}>Live</Link>
+                    <div className='mt-20 relative' key={index}>
+                      <Image className='w-56 h-56 bg-cover bg-center bg-clip-content' width={40} height={40} src={item.image}></Image>
+                      <div className='absolute left-0 bottom-0 flex items-center justify-center'>
+                       <div>
+                       <Link href={item.project_Link} target='_blank'>Demo</Link>
+                       </div>
+                       <div>
+                       <Link href={item.github}>Live</Link>
+                       </div>
                       </div>
                     </div>
                   ))

@@ -16,7 +16,6 @@ const Navbar = () => {
     setNavbar(!navbar);
 
     setActiveTab(tabNumber);
-    console.log(tabNumber);
   };
 
   const [showbox, setShowbox] = useState(false);
@@ -28,8 +27,8 @@ const Navbar = () => {
 
   return (
     <>
-      <header className="w-full bg-white fixed z-10">
-        <div className=" container mx-auto py-2 md:py-0 flex items-center justify-between px-2 sm:px-4  bg-white">
+      <header className="w-full bg-white fixed z-10 shadow-xl">
+        <div className=" container mx-auto py-2 md:py-0 flex items-center justify-between px-2 bg-white">
           {/* === logo_ left ===  */}
           <div className="logo_section cursor-pointer">
             <Link href="/" className="text-3xl font-extrabold text-black">
@@ -44,7 +43,7 @@ const Navbar = () => {
             <nav className="flex">
               <ul
                 id="hello"
-                className={`flex text-xl md:gap-6 flex-col absolute w-full left-0 top-12 bg-white text-center py-3 md:flex md:flex-row md:top-0 md:relative z-40 ${navbar ? "block" : "hidden"
+                className={`flex text-xl md:gap-5 flex-col absolute w-full left-0 top-12 bg-white text-center py-3 md:flex md:flex-row md:top-0 md:relative z-40 ${navbar ? "block" : "hidden"
                   }`}
               >
                 <Link

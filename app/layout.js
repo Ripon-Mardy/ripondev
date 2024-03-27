@@ -1,6 +1,7 @@
 import Footer from '@/Components/Footer/Footer'
 import './globals.css'
 import Navbar from '@/Components/Navbar/Navbar'
+import Whatsapp from '@/Components/Whatsapp/Whatsapp'
 
 export const metadata = {
   title: 'Ripon M. - Developer portfolio',
@@ -14,8 +15,10 @@ export default function RootLayout({ children }) {
       <body suppressHydrationWarning>
       <Navbar/>
       <div className='container mx-auto'>
+      <Whatsapp/>
         {children}
         </div>
+        
         <Footer/>
         </body>
     </html>

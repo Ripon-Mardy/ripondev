@@ -10,7 +10,9 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 // === import images ===
-import herorightImage from "../../images/hero2.jpg";
+import herorightImage from "../../images/axel.jpg";
+import panda from '../../images/panda.png'
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -23,9 +25,12 @@ const Hero = () => {
             <h5 className="text-sm uppercase text-red-400 font-bold">
               Hello ! welcome to my site
             </h5>
-            <h1 className="text-3xl md:text-5xl capitalize font-bold -tracking-tight mt-6">
-              I'm Ripon Mardy{" "}
-              <span className="font-extrabold text-text-color">Axel</span>{" "}
+            <h1 className="text-3xl md:text-5xl  uppercase font-bold backgroundImage relative -tracking-tight mt-6">
+              I'm Ripon Mardy
+              <span className="font-extrabold text-text-color">Axel</span>
+              <div className="w-12 absolute right-[28px] -bottom-[30px]">
+              <Image layout="responsive" width={30} height={30} src={panda}></Image>
+              </div>
             </h1>
             <h2 className="text-2xl md:text-3xl capitalize font-extrabold -tracking-tighter text-text-color mt-4 mb-3">
               Web Developer
@@ -37,18 +42,18 @@ const Hero = () => {
               commodi, facere perferendis maiores ullam accusamus.
             </p>
             <div className="relative">
-            <a
+            <Link
               className="inline-block bg-secondaryBgColor text-white px-4 py-2 font-semibold rounded-lg text-xl border-2 border-borderBgColor hover:bg-transparent hover:text-black duration-200 ease-in-out mr-6"
-              href="#"
+              href="/resume"
             >
               Resume
-            </a>
-            <a
+            </Link>
+            <Link
               className="inline-block border-2 border-borderBgColor font-semibold mt-2 sm:mt-0 px-4 py-2 text-black rounded-lg text-xl hover:bg-secondaryBgColor duration-200 ease-in-out hover:text-white"
-              href="#"
+              href="/contact"
             >
               Contact Me
-            </a>
+            </Link>
             <div className="absolute right-40 top-0 shadows"></div> 
             </div>
             
@@ -57,37 +62,41 @@ const Hero = () => {
             <div className="socials_icons flex items-center justify-center md:justify-start mt-5 gap-3 md:gap-4">
               <a
                 className="bg-secondaryBgColor p-2 rounded-full text-xl text-white border-2 hover:text-black duration-200 ease-in-out border-borderBgColor hover:bg-transparent"
-                href="#"
+                href="https://www.facebook.com/romenripon.mardi.1"
+                target="_blank"
               >
                 {" "}
-                <BsFacebook />{" "}
+                <BsFacebook />
               </a>
               <a
                 className="bg-secondaryBgColor p-2 rounded-full text-xl text-white border-2 hover:text-black duration-200 ease-in-out border-borderBgColor hover:bg-transparent"
-                href="#"
+                href="https://www.instagram.com/axel_r.1/"
+                target="_blank"
               >
-                {" "}
-                <BsInstagram />{" "}
+                
+                <BsInstagram />
               </a>
               <a
                 className="bg-secondaryBgColor p-2 rounded-full text-xl text-white border-2 hover:text-black duration-200 ease-in-out border-borderBgColor hover:bg-transparent"
-                href="#"
+                href="https://www.linkedin.com/in/ripon-mardy-axel-bb2286249/"
+                target="_blank"
               >
-                {" "}
-                <BsLinkedin />{" "}
+                
+                <BsLinkedin />
               </a>
               <a
                 className="bg-secondaryBgColor p-2 rounded-full text-xl text-white border-2 hover:text-black duration-200 ease-in-out border-borderBgColor hover:bg-transparent"
-                href="#"
+                href="https://github.com/Ripon-Mardy"
+                target="_blank"
               >
-                {" "}
-                <BsGithub />{" "}
+                
+                <BsGithub />
               </a>
              
             </div>
           </div>
           {/* === hero right section ===  */}
-          <div className="image_container text-center mx-auto mt-3">
+          <div className="image_container text-center mx-auto mt-10">
             <Image
             className="w-72 mx-auto md:w-auto md:mx-0"
               width={350}

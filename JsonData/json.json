@@ -1,50 +1,73 @@
 [
     {
         "id": 1,
-        "title": "project 1",
-        "category": "landing page",
-        "project" : ""
+        "category": "e-Commerce",
+        "project_Link": "https://ripon-mardy.github.io/Panda-comarce/",
+        "github": "https://github.com/Ripon-Mardy/Panda-comarce",
+        "image": "https://i.ibb.co/kMwxPqL/Screenshot-2024-03-14-010011.png"
     },
     {
         "id": 2,
-        "title": "project 2",
-        "category": "nextjs page"
+        "category": "Portfolio",
+        "project_Link" :"https://ripon-mardy.github.io/Axel-R-Ripon/",
+        "github" : "https://github.com/Ripon-Mardy/Axel-R-Ripon",
+        "image": "https://i.ibb.co/jkPPxXZ/Screenshot-2024-03-14-001055.png"
     },
     {
-        "id" : 3,
-        "title" : "project 3",
-        "category" : "tailwind css"
+        "id": 3,
+        "category": "Educational",
+        "project_Link": "https://ripon-mardy.github.io/School_learning/",
+        "github": "https://github.com/Ripon-Mardy/School_learning",
+        "image": "https://i.ibb.co/5M4bMdT/Screenshot-2024-03-14-010353.png"
     },
     {
-        "id" : 4,
-        "title" : "project 4",
-        "category" :"e-Commerce"
+        "id": 4,
+        "category": "Form Valdation",
+        "project_Link": "https://ripon-mardy.github.io/Form-Validation/",
+        "github": "https://github.com/Ripon-Mardy/Form-Validation",
+        "image": "https://i.ibb.co/84WKBq2/from-validation.png"
     },
     {
-        "id" : 4,
-        "title" : "project 4",
-        "category" :"Bootstrap 5"
+        "id": 5,
+        "category": "landing page",
+        "project_Link": "https://ripon-mardy.github.io/Health-Tracker/",
+        "github": "https://github.com/Ripon-Mardy/Health-Tracker",
+        "image": "https://i.ibb.co/wRZyJdx/Screenshot-2024-03-14-002816.png"
     },
     {
-        "id" : 5,
-        "title" : "project 5",
-        "category" : "Business & Corporate"
+        "id": 6,
+        "category": "landing page",
+        "project_Link": "https://ripon-mardy.github.io/Simple-Food-Webiste/",
+        "github": "https://github.com/Ripon-Mardy/Simple-Food-Webiste",
+        "image": "https://i.ibb.co/vmQNdmG/Screenshot-2024-03-14-003121.png"
     },
     {
-        "id" : 6,
-        "title" : "project 6",
-        "category" : "Portfolio"
+        "id": 7,
+        "category": "landing page",
+        "project_Link": "https://ripon-mardy.github.io/Marketing/",
+        "github": "https://github.com/Ripon-Mardy/Marketing",
+        "image": "https://i.ibb.co/7nKfySW/Screenshot-2024-03-14-003747.png"
     },
     {
-        "id" : 7,
-        "title" : "project 7",
-        "category" : "Educational"
+        "id": 8,
+        "category": "Creative",
+        "project_Link": " https://ripon-mardy.github.io/Basic-calculator/",
+        "github": "https://github.com/Ripon-Mardy/Basic-calculator",
+        "image": "https://i.ibb.co/4FQDKhG/Screenshot-2024-03-14-010721.png"
+       
     },
     {
-        "id" : 8,
-        "title" : "project 8",
-        "category" : "Form Valdation",
-        "project_Link" : "https://ripon-mardy.github.io/Form-Validation/",
-        "github" : "https://github.com/Ripon-Mardy/Form-Validation"
+        "id": 9,
+        "category": "Creative",
+        "project_Link": "https://ripon-mardy.github.io/Tabs-Animation/",
+        "github": "https://github.com/Ripon-Mardy/Tabs-Animation",
+        "image": "https://i.ibb.co/4pvB64D/Screenshot-2024-03-14-010953.png"
+    },
+    {
+        "id": 10,
+        "category": "Creative",
+        "project_Link": "https://ripon-mardy.github.io/Add-Friend-system/",
+        "github": "https://github.com/Ripon-Mardy/Add-Friend-system",
+        "image": "https://i.ibb.co/3zVmgpS/Screenshot-2024-03-14-011224.png"
     }
 ]

@@ -42,8 +42,8 @@ const Technology = () => {
             &
           </h1>
           <h1 className="flex justify-center items-center gap-4 text-2xl font-semibold md:text-4xl">
-            Full Stack Framework{" "}
-            <Image className="w-24 md:w-32" src={nextjs}></Image>{" "}
+            Full Stack Framework
+            <Image className="w-24 md:w-32" src={nextjs}></Image>
           </h1>
         </div>
 

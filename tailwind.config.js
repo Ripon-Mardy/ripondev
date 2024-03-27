@@ -8,7 +8,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        
+        'bg-image' : '/images/image_cover.JPG'
       },
       backgroundColor : {
         'bg-color': '#182C61',

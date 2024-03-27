@@ -92,7 +92,7 @@ const Footer = () => {
                   {" "}
                   <span className="text-lg mr-1">
                     <BiCaretRight />
-                  </span>{" "}
+                  </span>
                   Gallary
                 </li>
               </ul>
@@ -105,7 +105,7 @@ const Footer = () => {
                 {" "}
                 <span className="text-xl text-red-700 mr-1">
                   {" "}
-                  <BsYoutube />{" "}
+                  <BsYoutube />
                 </span>{" "}
                 Subscribe my youtube channel
               </h1>
